@@ -1,0 +1,15 @@
+{
+  "name": "anti-doping-education-app",
+  "version": "1.0.0",
+  "description": "Technology portal for anti-doping education and awareness",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

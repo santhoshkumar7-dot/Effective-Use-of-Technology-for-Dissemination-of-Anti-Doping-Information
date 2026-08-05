@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CleanSport Tech - Anti-Doping Information & Education Portal</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="An interactive portal providing elite athletes and coaches with instant access to WADA drug checks, testing simulations, risk calculators, and clean sport certification.">
+  <meta name="keywords" content="Anti-Doping, CleanSport, WADA, TUE, Athlete Education, Drug Testing Simulator, Supplement Contamination">
+  <meta name="author" content="CleanSport Academy">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <div class="brand-section">
+          <div class="brand-logo">
+            <i data-lucide="shield" size="28" stroke-width="2.5"></i>
+          </div>
+          <span class="brand-name">CleanSport Tech</span>
+        </div>
+        
+        <nav>
+          <ul class="nav-menu">
+            <li>
+              <a class="nav-link active" data-route="home">
+                <i data-lucide="home"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" data-route="checker">
+                <i data-lucide="search"></i>
+                <span>Substance Checker</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" data-route="simulator">
+                <i data-lucide="activity"></i>
+                <span>Testing Simulator</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" data-route="analyzer">
+                <i data-lucide="shield-alert"></i>
+                <span>Supplement Risk</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" data-route="tue">
+                <i data-lucide="file-text"></i>
+                <span>TUE Assistant</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" data-route="quiz">
+                <i data-lucide="graduation-cap"></i>
+                <span>Clean Sport Academy</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="theme-toggle-container">
+          <span class="theme-label">Interface Mode</span>
+          <button id="theme-toggle" class="theme-switch-btn" aria-label="Toggle visual theme">
+            <i data-lucide="moon" class="text-primary"></i>
+          </button>
+        </div>
+        <div class="system-credit">
+          CleanSport Tech v2.0
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Layout Panel -->
+    <main class="main-layout">
+      <!-- Top header bar -->
+      <header class="main-header">
+        <div class="header-search">
+          <h2 id="header-title">Dashboard Overview</h2>
+        </div>
+        <div class="header-actions">
+          <div class="user-badge">
+            <div class="user-avatar">A</div>
+            <span class="user-name">Athlete Mode</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Dynamically rendered content viewport -->
+      <div class="content-viewport">
+        <div id="viewport-container">
+          <!-- Views will inject here dynamically -->
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Application Logic -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>
